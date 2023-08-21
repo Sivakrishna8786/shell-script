@@ -1,5 +1,15 @@
 #!/bin/bash
+
 echo "hello world, I am taking training of DevOps with AWS from Sivakumar muttukuru"
-echo "Ramesh": Hi Sresh, Good Morninh.
-echo "suresh": Hi Ramesh, Good Morning. how are you!.
-echo "Ramesh": am going good suresh, what about you!.
+PERSON1=Ramesh
+PERSON2=Suresh
+
+echo "$PERSON1: Hi $PERSON2, Good Morninh."
+echo "$PERSON2: Hi $PERSON1, Good Morning. how are you."
+echo "$PERSON1: am going good $PERSON2, what about you.\"
+echo "$PERSON1: am going good $PERSON2, what about you.\"
+echo "$PERSON1: am going good $PERSON2, what about you.\"
+
+echo "$PERSON1: am going good $PERSON2, what about you.\"
+
+echo "$PERSON1: am going good $PERSON2, what about you.\"
