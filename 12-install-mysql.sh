@@ -23,3 +23,13 @@ fi
 else
     echo "installation is mysql is success " 
 fi
+
+   yum install postfix  -y
+
+   if [ $? -ne 0 ]
+   then 
+      echo "installation of postfix is error"
+      exit 1
+else
+    echo "installation is postfix is success " 
+fi
