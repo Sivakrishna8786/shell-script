@@ -13,4 +13,4 @@ USERID=$(id -u)
 
 fi
 
-   yum install mysql  
+   yum install mysql  -y
