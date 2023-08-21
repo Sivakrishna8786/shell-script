@@ -5,4 +5,4 @@ PERSONS=("Ramesh" "Suresh" "SACHINE")
 
 #inside array we always refer values with index and its start from 0
 
-echo "Frist person of: ${PERSONS[0 1 2]}"
+echo "Frist person of: ${PERSONS[0, 1, 2]}"
