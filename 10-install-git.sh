@@ -2,7 +2,7 @@
 
 # Our program goal is to install Mysql
 
-USERID=$(Id -u)
+USERID=$(id -u)
  
  if [ $USERID -ne 0 ]
  then
