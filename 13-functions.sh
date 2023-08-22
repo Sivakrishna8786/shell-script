@@ -11,6 +11,7 @@ USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
+
   # this function should validate the previous command and it inform user success or failure 
  VALIDATE (){
    #$1 it will receive the input argument1
@@ -19,7 +20,7 @@ N="\e[0m"
       echo -e "$2 ... $R FAILURE $N"
       exit 1
     else
-       echo -e "$2 ... $G SUCCESS $N"
+       echo  "$2 ... $G SUCCESS $N"
    fi
  }
  
