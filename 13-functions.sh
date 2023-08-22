@@ -17,11 +17,11 @@ N="\e[0m"
    #$1 it will receive the input argument1
    if [ $1 -ne 0 ]
    then 
-      echo -e "$2 ..... $R FAILURE $N"
-      exit 0
-else
-    echo  -e "$2 ....... $G FAILURE $N"
-fi
+      echo -e "$2 ... $R FAILURE $N"
+      exit 1
+    else
+       echo  -e "$2 ... $G FAILURE $N"
+   fi
  }
  
  if [ $USERID -ne 0 ]
