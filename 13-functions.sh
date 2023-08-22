@@ -2,14 +2,14 @@
 
 # Our program goal is to install Mysql
 
-Date=$(date%F-%H-%M-%S)
+Date=$(date +%F)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 
 USERID=$(id -u)
 
-R="\e[30m"
-G="\e[31m"
+R="\e[31m"
+G="\e[32m"
 N="\e[0m"
 
 
