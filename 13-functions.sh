@@ -12,8 +12,6 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-
-
   # this function should validate the previous command and it inform user success or failure 
  VALIDATE (){
    #$1 it will receive the input argument1
