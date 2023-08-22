@@ -22,7 +22,7 @@ N="\e[0m"
       echo -e "installation........$R FAILURE $N"
       exit 1
 else
-    echo -e "installation..........$G SUCCESS $N"
+    echo  "installation..........$G SUCCESS $N"
 fi
 
  }
