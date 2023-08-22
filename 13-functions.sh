@@ -23,10 +23,10 @@ N="\e[0m"
 else
     echo  -e "$2 ....... $G SUCCESS $N"
 fi
-
+ }
    #$2 it will receive the input argument1
 
- if [ $2 -ne 0 ]
+ if [ $2 -ne 0 ] {
    then 
       echo -e "installation....... $R FAILURE $N"
       exit 2
