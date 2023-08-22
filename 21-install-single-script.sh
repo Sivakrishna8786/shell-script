@@ -28,7 +28,6 @@ VALIDATE(){
     fi  
 }
 # all args are in $@
-
 for i in $@
 do
    yum list installed $i -y &>>$LOGFILE
