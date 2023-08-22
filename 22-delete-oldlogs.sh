@@ -17,4 +17,4 @@ do
 # here write your statement 
   echo "deleting $line" &> $LOGFILE
   rm -rf $line
-done < $FILES_TO_DELETE
+done <<< $FILES_TO_DELETE
