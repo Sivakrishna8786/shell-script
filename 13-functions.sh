@@ -19,10 +19,10 @@ N="\e[0m"
    #$1 it will receive the input argument1
    if [ $1 -ne 0 ]
    then 
-      echo "installation........$R FAILURE"$N
+      echo "installation........$R FAILURE $N"
       exit 1
 else
-    echo "installation..........$G SUCCESS" $N
+    echo "installation..........$G SUCCESS $N"
 fi
 
  }
