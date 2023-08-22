@@ -1,8 +1,12 @@
 #!/bin/bash
 
 # Our program goal is to install Mysql
-
+DATE=$(date +%F)
 USERID=$(id -u)
+LOGSDIR=/home/centos/shellscript.logs
+LOGFILE=$LOGSDIR/$0.log
+#/home/centos/shell-script.logs\script-name-date.logs
+SCRIPT_NAME=$0
 
 R="\e[31m"
 G="\e[32m"
