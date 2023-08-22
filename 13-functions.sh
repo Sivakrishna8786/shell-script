@@ -8,15 +8,21 @@ LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 
 USERID=$(id -u)
 
+R="\e[30m"
+G="\e[31m"
+N="\e[0m"
+
+
+
   # this function should validate the previous command and it inform user success or failure 
  VALIDATE (){
    #$1 it will receive the input argument1
    if [ $1 -ne 0 ]
    then 
-      echo "installation........ FAILURE"
+      echo "installation........$R FAILURE"$N
       exit 1
 else
-    echo "installation........... SUCCESS" 
+    echo "installation..........$G SUCCESS" $N
 fi
 
  }
