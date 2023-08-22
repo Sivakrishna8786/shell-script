@@ -14,26 +14,14 @@ N="\e[0m"
 
   # this function should validate the previous command and it inform user success or failure 
  VALIDATE (){
-
    #$1 it will receive the input argument1
    if [ $1 -ne 0 ]
    then 
-      echo -e "$1 ..... $R FAILURE $N"
+      echo -e "$2 ..... $R FAILURE $N"
       exit 1
 else
     echo  -e "$2 ....... $G SUCCESS $N"
 fi
- }
-   #$2 it will receive the input argument1
-
- if [ $2 -ne 0 ] {
-   then 
-      echo -e "installation....... $R FAILURE $N"
-      exit 2
-else
-    echo  -e "installation......... $G SUCCESS $N"
-fi
-
  }
  
  if [ $USERID -ne 0 ]
