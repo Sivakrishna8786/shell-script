@@ -26,7 +26,7 @@ fi
 
    #$2 it will receive the input argument1
 
- if [ $1 -ne 0 ]
+ if [ $2 -ne 0 ]
    then 
       echo -e "installation....... $R FAILURE $N"
       exit 2
