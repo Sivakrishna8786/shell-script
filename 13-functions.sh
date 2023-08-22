@@ -24,6 +24,16 @@ else
     echo  -e "installation......... $G SUCCESS $N"
 fi
 
+   #$2 it will receive the input argument1
+
+ if [ $1 -ne 0 ]
+   then 
+      echo -e "installation....... $R FAILURE $N"
+      exit 2
+else
+    echo  -e "installation......... $G SUCCESS $N"
+fi
+
  }
  
  if [ $USERID -ne 0 ]
