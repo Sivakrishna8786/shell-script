@@ -21,7 +21,7 @@ fi
       echo "installation of mysql is error"
       exit 1
 
-    echo "installation is mysql is success" 
+    echo "installation is mysql is success " 
 fi
 
 
