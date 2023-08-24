@@ -19,7 +19,7 @@ DISK_USEAGE_THRESHOLD=1
 
 ##IFS means internal field seperator in space
 
-while IFS = read line
+while IFS= read line
 do 
    echo "output: $line"
 
