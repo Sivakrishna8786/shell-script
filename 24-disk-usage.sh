@@ -33,3 +33,4 @@ do
 done <<< $DISK_USAGE
     echo -e "message: $message"
     echo "$message" | mail -s "HIGH DISK Usage" sivakrishn17@gmail.com
+    mail.sh sivakrishn17@gmail.com "HIGH DISK USAGE" "$message" "DevOps Team" "HIGH DISK USAGE" 
