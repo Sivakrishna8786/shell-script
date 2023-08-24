@@ -18,7 +18,6 @@ DISK_USEAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
 DISK_USAGE_THRESHOLD=1
 
 ##IFS means internal field seperator in space
-
 while IFS= read line
 do 
    echo "output: $line"
