@@ -4,8 +4,11 @@
 #mail.sh TO_ADDRESS SUBJECT BODY TEAM_NAME ALERT_TYPE
 TO_ADDRESS=$1
 SUBJECT=$2
-BODY=$3
+BODY=$(sed -e 's/[]\/$*.^[]/\\&/g' <<< $3)
+echo "escaped contect: $BODY"
 TEAM_NAME=$4
 ALERT_TYPE=$5
 
-echo "All args: $@"
+#echo "All args: $@"
+ FINAL_BODY=$(sed -e "s/TEAM_NAME/$TEAM_NAME/g" -e "s/ALERT_TYPE/$ALERT_TYPE/g" -e "s/MESSAGE/$BODY" template.html) 
+echo "$BODY" | mail -s "$SUBJECT" "$TO_ADDRESS"
