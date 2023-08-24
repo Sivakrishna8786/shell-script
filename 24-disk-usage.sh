@@ -4,7 +4,7 @@
 #validations
 #log redirectory 
 
-LOGFILE_DIRECTORY=/tmp/
+LOGFILE_DIRECTORY=/tmp
 DATE=$(date +%F:%H:%M:%S)
 SCRIPT_NAME=$0
 LOGFILE=$LOGFILE_DIRECTORY/$SCRIPT_NAME-$DATE.log
@@ -14,8 +14,8 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-DISK_USEAGE=$(df -hT | grep -vE 'tmpsf|Filesystem')
-DISK_USEAGE_THRESHOLD=1
+DISK_USEAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
+DISK_USAGE_THRESHOLD=1
 
 ##IFS means internal field seperator in space
 
