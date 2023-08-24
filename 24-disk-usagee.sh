@@ -22,5 +22,4 @@ while IFS= read line
 do 
    echo "output: $line"
 done <<< $DISK_USAGE
-mail.sh sivakrishn17@gmail.com "HIGH DISK USAGE" "$message" "DevOps Team" "HIGH DISK USAGE" 
 
