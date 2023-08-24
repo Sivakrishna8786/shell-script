@@ -14,13 +14,13 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-DISK_USEAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
+DISK_USAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
 DISK_USAGE_THRESHOLD=1
 
-##IFS means internal field seperator in space
+##IFS= means internal field seperator in space
 while IFS= read line
 do 
-   echo "output:: $line"
+   echo "output: $line"
 done <<< $DISK_USAGE
 
 
